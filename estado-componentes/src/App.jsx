@@ -9,7 +9,6 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h1>Crea una cuenta</h1>
               <Registro/>
           </div>
         </div>

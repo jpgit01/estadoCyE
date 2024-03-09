@@ -12,3 +12,16 @@ body{
 background: #077558;
 background: linear-gradient(45deg, #03d39b, #eef8be);
 }
+
+i{
+  font-size: 5rem;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+a i{
+  color: #000000;
+  text-decoration: none;
+  
+}

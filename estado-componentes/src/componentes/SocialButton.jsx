@@ -1,17 +1,11 @@
-import React from "react"
-function SocialButton() {
+import React from 'react';
 
-    return (
-      <>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h1>SocialButton</h1>
-            </div>
-          </div>
-        </div>
-      </>
-    )
-  }
-  
-  export default SocialButton
+const SocialButton = ({ icon }) => {
+  return (
+    <a href='#'>
+    <i className={icon}></i>
+    </a>
+  );
+}
+
+export default SocialButton;
