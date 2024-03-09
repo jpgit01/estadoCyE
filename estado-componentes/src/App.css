@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=077558&c2=d0e6a1&gt=l&gd=dbl
+*/
+background: #077558;
+background: linear-gradient(45deg, #03d39b, #eef8be);
+}
