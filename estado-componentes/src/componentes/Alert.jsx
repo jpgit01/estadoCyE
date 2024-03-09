@@ -1,17 +1,19 @@
-import React from "react"
-function Alert() {
+import React from 'react';
+import { useState } from 'react';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 
+function AlertFunction() {
+  const [show, setShow] = useState(false);
+
+  if (show) {
     return (
-      <>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h1>Alert</h1>
-            </div>
-          </div>
-        </div>
-      </>
-    )
+      <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+        <Alert.Heading><h5>Completa todos los campos!</h5></Alert.Heading>
+      </Alert>
+    );
   }
-  
-  export default Alert
+  return <Button onClick={() => setShow(true)}>Show Alert</Button>;
+}
+
+export default AlertFunction;
