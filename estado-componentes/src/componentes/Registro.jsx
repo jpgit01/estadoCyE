@@ -1,13 +1,10 @@
-import React from "react"
 import SocialButton from "./SocialButton"
 import Formulario from "./Formulario"
-import Alert from "./Alert"
 import AlertFunction from "./Alert"
+import React from "react"
 
 
-
-function Registro() {
-
+function Registro({ alert , setAlert }) {
   return (
     <>
       <div className="container">
@@ -18,8 +15,9 @@ function Registro() {
             <SocialButton  icon="fa-brands fa-github me-3 mt-3" />
             <SocialButton icon="fa-brands fa-linkedin-in me-3 mt-3" />
             <h3 className="mt-3">O usa tu email para registrarte</h3>
-           <Formulario/> 
-           <AlertFunction/>
+
+           <Formulario setAlert={setAlert}/>
+           {alert.texto && <AlertFunction variante={alert.variante} texto={alert.texto}/>}
           </div>
         </div>
       </div>
